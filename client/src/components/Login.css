@@ -228,21 +228,22 @@ body {
 
 .new{
   top: -109px;
-  background-color: #08d;
-  border-radius: 12px;
+  background-color: #131c2d;
   border: 0;
+  border-radius: 12px;
+  bottom: 56px;
   box-sizing: border-box;
   color: #eee;
   cursor: pointer;
   font-size: 18px;
   height: 40px;
+  left: 1rem;
   margin-top: 16px;
   outline: 0;
-  text-align: center;
-  width: 25%;
   position: relative;
-  left: 1rem;
-  bottom: 56px;
+  text-align: center;
+  width: 33%;
+  bottom: 111px;
 };
 .container2 h1 {
   color: #fff;
