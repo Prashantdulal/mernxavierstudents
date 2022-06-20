@@ -132,6 +132,7 @@ body {
     position: relative;
     left: 16rem;
     bottom:  6rem;;
+    top: -70px;
 }
   
   .submit:active {
