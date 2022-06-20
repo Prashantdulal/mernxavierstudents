@@ -70,7 +70,7 @@ const Login = () => {
               />
               <div className="cut"></div>
               <label htmlFor="firstname" className="placeholder">
-                Enter your id(College email
+                Enter your id(College email)
               </label>
             </div>
           </div>
