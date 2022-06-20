@@ -132,7 +132,7 @@ body {
     position: relative;
     left: 16rem;
     bottom:  6rem;;
-    top: -70px;
+    top: -104px;
 }
   
   .submit:active {
@@ -168,7 +168,7 @@ body {
   margin-top: 10px;
 }
 .placeholder {
-  font-size: 12px;
+  font-size: 13px;
   color: #65657b;
   font-family: sans-serif;
   left: 18px;
@@ -195,9 +195,9 @@ body {
   width: 36%;
   position: relative;
   left: 13rem;
-  bottom: 10rem;
+  top: -77px;
 }
-  /* .input {
+  .input {
     background-color: #303245;
     border-radius: 7px;
     border: 0;
@@ -209,8 +209,8 @@ body {
     padding: 4px 20px 0;
     width: 97%;
     position: relative;
-    top: 1px; */
-/* } */
+    top: 1px; 
+}
 /*  */
 
 
