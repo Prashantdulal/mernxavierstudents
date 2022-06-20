@@ -78,7 +78,7 @@ const Login = () => {
                 type="text"
               />
               <div className="cut"></div>
-              <label htmlFor="firstname" className="placeholder">
+              <label htmlFor="firstname" className="placeholder2">
                 Enter your id(College email
               </label>
             </div>

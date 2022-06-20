@@ -85,7 +85,7 @@ body {
   transform: translateY(8px);
 }
 
-.placeholder {
+.placeholder2 {
   color: #65657b;
   font-family: sans-serif;
   left: 20px;
@@ -97,16 +97,16 @@ body {
   top: 20px;
 }
 
-.input2:focus ~ .placeholder,
-.input2:not(:placeholder-shown) ~ .placeholder {
+.input2:focus ~ .placeholder2,
+.input2:not(:placeholder-shown) ~ .placeholder2 {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
-.input2:not(:placeholder-shown) ~ .placeholder {
+.input2:not(:placeholder-shown) ~ .placeholde2 {
   color: #808097;
 }
 
-.input2:focus ~ .placeholder {
+.input2:focus ~ .placeholder2 {
   color: #dc2f55;
 }
 .submit2 {
@@ -124,7 +124,7 @@ body {
   width: 22%;
 }
 
-.submit:active {
+.submit2:active {
   background-color: #06b;
 }
 
