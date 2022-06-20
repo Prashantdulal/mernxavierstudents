@@ -99,7 +99,7 @@ function Signup() {
           />
           <div className="cut"></div>
           <label htmlFor="firstname" className="placeholder">
-            Enter your email
+            Enter your Email Id (Personal Email)
           </label>
         </div>
         <div className="input-container ic1">
@@ -115,7 +115,7 @@ function Signup() {
           />
           <div className="cut"></div>
           <label htmlFor="firstname" className="placeholder">
-            Enter your id
+            Enter your id(College Email)
           </label>
         </div>
         <div className="input-container ic1">
