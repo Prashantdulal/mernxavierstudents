@@ -11,6 +11,7 @@ const Login = () => {
   const [id, setId] = useState("");
   const [data, setData] = useState({});
   const loginUser = async (e) => {
+
     e.preventDefault();
     const res = await fetch("/login", {
       method: "POST",
@@ -18,7 +19,7 @@ const Login = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        id: id,
+        id: id.trim(),
       }),
     });
     const data = await res.json();

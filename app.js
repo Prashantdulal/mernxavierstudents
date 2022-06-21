@@ -24,7 +24,7 @@ app.get("/users", (req, res) => {
   res.send("This is users");
 });
 
-const PORT  = process.env.PORT || 5000;
+const PORT  = process.env.PORT || 3000;
 
 
 if(process.env.NODE_ENV === "production"){
