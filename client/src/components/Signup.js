@@ -42,7 +42,7 @@ function Signup() {
       body: JSON.stringify({
         name,
         email,
-        id,
+        id:id.trim(),
         sec,
         intrest,
         address,
