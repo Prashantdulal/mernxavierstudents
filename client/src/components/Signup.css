@@ -10,7 +10,7 @@ body {
     background-color: #15172b;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 95vh;
+    height: 100%;
     padding: 42px;
     width: auto;
 }
