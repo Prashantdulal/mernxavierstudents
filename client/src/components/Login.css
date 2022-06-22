@@ -250,14 +250,12 @@ body {
   }
   .container2 {
    
-    padding: 15px 6px 1px 36px;
-    background: rgb(48, 26, 48);
+   background: #301a30;
     border-radius: 20px;
+    padding: 1px 39px 10px 19px;
     position: relative;
-    top: -14px;
-    min-width: 10px;
- 
-    left: 1px;
+    top: 6px;
+    max-width: 32rem;
   }
 
   .input2 {
