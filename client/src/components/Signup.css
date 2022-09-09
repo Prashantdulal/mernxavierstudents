@@ -1,13 +1,13 @@
 body {
     align-items: center;
-    background-color: #000;
+    background-color: #ff5f7b;
     display: flex;
     justify-content: center;
     height: 41;
   }
   
   .form {
-    background-color: #15172b;
+    background-color: #4d5df3;
     border-radius: 20px;
     box-sizing: border-box;
     height: 100%;
@@ -45,11 +45,11 @@ body {
   }
   
   .input {
-    background-color: #303245;
+    background-color: #ffffff;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: #000000;
     font-size: 18px;
     height: 98%;
     outline: 0;
@@ -58,7 +58,7 @@ body {
   }
   
   .cut {
-    background-color: #15172b;
+    background-color: #00ff58;
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -66,7 +66,7 @@ body {
     top: -20px;
     transform: translateY(0);
     transition: transform 200ms;
-    width: 76px;
+    width: 78px;
   }
   
   .cut-short {
@@ -79,7 +79,7 @@ body {
   }
   
   .placeholder {
-    color: #65657b;
+    color: #000000;
     font-family: sans-serif;
     left: 20px;
     line-height: 14px;

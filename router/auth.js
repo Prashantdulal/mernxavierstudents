@@ -11,22 +11,24 @@ const User = require("../models/userSchema");
 
 
 router.post("/register", async (req, res) => {
-  const { name, email, id, sec, intrest, address, phone } = req.body;
+  const { id, name, score, position } = req.body;
   
   try {
-    const userExist = await User.findOne({ email: email });
+    const userExist = await User.findOne({ id: id });
 
     if (userExist) {
       return res.status(422).json({ error: "Record already exist" });
+      
     }
 
-    const user = new User({ name, email, id, sec, intrest, address, phone });
+    const user = new User({ id, name, score, position });
     await user.save();
 
    res.status(201).json({ message: "Record added successfully" });
   } catch (err) {
     console.log(err);
   }
+  
 
 });
 

@@ -11,12 +11,10 @@ function Signup() {
   let history = useHistory();
   const [user, setUser] = useState({
     name: "",
-    email: "",
     id: "",
-    sec: "",
-    address: "",
-    intrest: "",
-    phone: "",
+    score: "",
+    position: "",
+
   });
 
   let name, value;
@@ -25,6 +23,7 @@ function Signup() {
 
     name = e.target.name;
     value = e.target.value;
+    
 
     setUser({ ...user, [name]: value });
   };
@@ -32,7 +31,7 @@ function Signup() {
   const PostData = async (e) => {
     e.preventDefault();
 
-    const { name, email, id, sec, intrest, address, phone } = user;
+    const { name,  id, score,position } = user;
 
     const resp = await fetch("/register", {
       method: "POST",
@@ -41,12 +40,9 @@ function Signup() {
       },
       body: JSON.stringify({
         name,
-        email,
+        score,
         id:id.trim(),
-        sec,
-        intrest,
-        address,
-        phone,
+        position,
       }),
     });
 
@@ -68,7 +64,7 @@ function Signup() {
     <div>
           <form method="POST" className="loginform" id="loginfrm">
       <div id=" form" className="form">
-        <div className="title">Xavier International College</div>
+        <div className="title">Xavier Biology Olympiad</div>
         <div className="subtitle">Student's Information</div>
         <div className="input-container ic1">
           <input
@@ -83,23 +79,7 @@ function Signup() {
           />
           <div className="cut"></div>
           <label htmlFor="firstname" className="placeholder">
-            Enter your name
-          </label>
-        </div>
-        <div className="input-container ic1">
-          <input
-            id="email"
-            name="email"
-            autoComplete="off"
-            value={user.email}
-            onChange={handleInputs}
-            className="input"
-            type="text"
-            placeholder=" "
-          />
-          <div className="cut"></div>
-          <label htmlFor="firstname" className="placeholder">
-            Enter your Email Id (Personal Email)
+          Team name
           </label>
         </div>
         <div className="input-container ic1">
@@ -115,15 +95,32 @@ function Signup() {
           />
           <div className="cut"></div>
           <label htmlFor="firstname" className="placeholder">
+            Team Id
+          </label>
+          </div>
+        {/* </div>
+        <div className="input-container ic1">
+          <input
+            id="id"
+            name="id"
+            autoComplete="off"
+            value={user.id}
+            onChange={handleInputs}
+            className="input"
+            type="text"
+            placeholder=" "
+          />
+          <div className="cut"></div>
+          <label htmlFor="firstname" className="placeholder">
             Enter your id(College Email)
-          </label>
-        </div>
+          </label> */}
+        {/* </div> */}
         <div className="input-container ic1">
           <input
-            id="sec"
-            name="sec"
+            id="score"
+            name="score"
             autoComplete="off"
-            value={user.sec}
+            value={user.score}
             onChange={handleInputs}
             className="input"
             type="text"
@@ -131,15 +128,15 @@ function Signup() {
           />
           <div className="cut"></div>
           <label htmlFor="firstname" className="placeholder">
-            Enter your section
+            Score
           </label>
         </div>
         <div className="input-container ic1">
           <input
-            id="intrest"
-            name="intrest"
+            id="position"
+            name="position"
             autoComplete="off"
-            value={user.intrest}
+            value={user.position}
             onChange={handleInputs}
             className="input"
             type="text"
@@ -147,41 +144,10 @@ function Signup() {
           />
           <div className="cut"></div>
           <label htmlFor="firstname" className="placeholder">
-            Enter your intrest
+            Position
           </label>
         </div>
-        <div className="input-container ic1">
-          <input
-            id="address"
-            name="address"
-            autoComplete="off"
-            value={user.address}
-            onChange={handleInputs}
-            className="input"
-            type="text"
-            placeholder=" "
-          />
-          <div className="cut"></div>
-          <label htmlFor="firstname" className="placeholder">
-            Enter your address
-          </label>
-        </div>
-        <div className="input-container ic1">
-          <input
-            id="phone"
-            name="phone"
-            autoComplete="off"
-            value={user.phone}
-            onChange={handleInputs}
-            className="input"
-            type="text"
-            placeholder=" "
-          />
-          <div className="cut"></div>
-          <label htmlFor="firstname" className="placeholder">
-            Enter your phone Number
-          </label>
-        </div>
+        
         <div>
           <input
             type="submit"
@@ -197,6 +163,7 @@ function Signup() {
     </form>
     <button className="submitnew" onClick={()=>{
       history.push("/");
+      
     }}>View Records</button>
     </div>
 

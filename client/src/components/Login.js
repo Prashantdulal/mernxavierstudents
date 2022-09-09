@@ -2,6 +2,7 @@ import React from "react";
 import "../components/Login.css";
 //import useHistory from react-router-dom
 import { useHistory } from "react-router-dom";
+import logo from "./p2.jpg";
 
 import { useState } from "react";
 
@@ -53,12 +54,15 @@ const Login = () => {
   };
 
   return (
+      
     <>
+    {/* <img src={logo} alt="" /> */}
       <div>
         <form method="POST" className="loginform2" id="loginfrm">
           <div id="form" className="form2">
-            <div className="title2">Xavier International College</div>
-            <div className="subtitle2">Student's Information</div>
+            <div className="title2">Xavier Biology Olympiad</div>
+            <div className="subtitle2">Participant's Performance</div>
+  
             <div className="input-container ic12">
               <input
                 id="id"
@@ -71,7 +75,7 @@ const Login = () => {
               />
               <div className="cut"></div>
               <label htmlFor="firstname" className="placeholder">
-                Enter your id(College email)
+               Team ID
               </label>
             </div>
           </div>
@@ -84,6 +88,8 @@ const Login = () => {
               value="View Info"
               onClick={loginUser}
             />
+
+            
           </div>
         </form>
         <button className="new" onClick={() => history.push("/addrecord")}>
@@ -91,13 +97,14 @@ const Login = () => {
         </button>
 
         <div className="container2 glow">
-          <h1 className="text">Name: :{data.name}</h1>
-          <h1 className="text">Email :{data.email}</h1>
-          <h1 className="text">Phone :{data.phone}</h1>
-          <h1 className="text">Section :{data.sec}</h1>
+          <h1 className="text">Name :{data.name}</h1>
+          <h1 className="text">Score :{data.score}</h1>
+          <h1 className="text">Position :{data.position}</h1>
+          {/* <h1 className="text">Section :{data.sec}</h1>
           <h1 className="text">Intrest :{data.intrest}</h1>
           <h1 className="text">Address :{data.address}</h1>
-          <h1 className="text">ID: :{data.id}</h1>
+           */}
+          {/* <h1 className="text">ID: :{data.id}</h1> */}
         </div>
       </div>
     </>

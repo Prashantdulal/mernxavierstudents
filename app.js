@@ -9,6 +9,10 @@ app.use(cors());
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 
+
+
+
+
 // const DB = "mongodb+srv://admin:admin@cluster0.1e1vq4l.mongodb.net/?retryWrites=true&w=majority";
 app.use(express.json());
 app.use(require("./router/auth"));
@@ -24,7 +28,8 @@ app.get("/users", (req, res) => {
   res.send("This is users");
 });
 
-const PORT  = process.env.PORT || 5000;
+
+const PORT  = process.env.PORT || 3000;
 
 
 if(process.env.NODE_ENV === "production"){
@@ -48,6 +53,12 @@ if ( process.env.NODE_ENV == "production"){
 
 
 }
+
+const middleware = (req, res, next) => {
+  console.log("Hello my middleware");
+  next();
+}
+
 
 
 app.listen(PORT, () => {
